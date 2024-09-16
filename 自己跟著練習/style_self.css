@@ -2,11 +2,14 @@
     padding: 0;
     margin:0;
 }
+body{
+    background-color: #000000;
+}
 header{
-    background-color: #231c1a;
+    background-color: rgba(35, 28,26,0.8);
     height: 80px;
     width:100%;
-    position: relative;
+    position: flex;
 }
 h1{
     color: white;
@@ -51,11 +54,12 @@ header a:hover{
 }
 .news h2{
     font-size: 60px;
+    margin-top: 60px;
 }
 .news p{
     color: #fef7e6;
     font-size: 18px;
-    margin:25px;
+    margin:25px 0;
 }
 .news a{
     color: white;
@@ -84,6 +88,9 @@ footer{
     font-size: 14px;
 }
 .shop{
+    display: flex;
+}
+.shop img{
     width:50%;
 }
 .info{
@@ -124,4 +131,83 @@ footer{
 .product p{
     font-size: 14px;
     line-height: 1.6em;
+}
+.newsletter{
+    background-color: #485652;
+    color:white;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+}
+.newsletter p{
+    margin-bottom: 20px;
+}
+.newsletter input, .newsletter button{
+    background-color: transparent;
+    color: white;
+    border:1px solid #949d9a;
+    padding:10px;
+    border-radius: 5px;
+}
+.newsletter input{
+    width: 200px;
+    margin-right: 15px;
+}
+.newsletter button{
+    width:80px;
+    cursor: pointer;
+}
+input::placeholder{
+    color: #dddddd;
+}
+input:focus{
+    outline: none;
+    border-color: #e0e9a3;
+}
+.menu{
+    display:none;
+}
+@media screen and (max-width: 768px){
+    header ul{
+        display:none;
+}
+
+header h1{
+    left:50%;
+    transform: translateX(-50%);
+}
+.news h2{
+    font-size: 40px;
+}
+.menu{
+    display:block;
+    background-color: transparent;
+    color: white;
+    font-size: 35px;
+    position: absolute;
+    top:15px;
+    left:20px;
+    border:none;
+    cursor: pointer;
+}
+.shop{
+    flex-direction: column;
+}
+.shop img{
+    width:100%;
+}
+.info{
+    width: 100%;
+    padding: 40px 0;
+}
+.info h2{
+    font-size: 30px;
+}
+.product{
+    flex-direction: column;
+    padding:60px 0;
+}
+.product div{
+    margin-bottom: 30px;
+}
 }
