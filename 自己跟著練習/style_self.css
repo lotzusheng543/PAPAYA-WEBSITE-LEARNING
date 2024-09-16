@@ -43,9 +43,10 @@ header a:hover{
 .news{
     background-color: antiquewhite;
     color: white;
-    height:85vh;
+    height:95vh;
     background-image:url(/自己跟著練習/images/banner.png) ;
     background-repeat: no-repeat;
+    background-size: cover;
     background-position: center;
     display: flex;
     flex-direction: column;
