@@ -6,7 +6,7 @@ body{
     background-color: #000000;
 }
 header{
-    background-color: rgba(35, 28,26,0.8);
+    background-color: rgba(35,28,26,0.6);
     height: 80px;
     width:100%;
     position: flex;
@@ -44,7 +44,7 @@ header a:hover{
     background-color: antiquewhite;
     color: white;
     height:95vh;
-    background-image:url(/自己跟著練習/images/banner.png) ;
+    background-image:url("images/banner.png") ;
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -58,14 +58,14 @@ header a:hover{
     margin-top: 60px;
 }
 .news p{
-    color: #fef7e6;
+    color: #FEF7E6;
     font-size: 18px;
     margin:25px 0;
 }
 .news a{
     color: white;
     text-decoration: none;
-    border: 1px solid #acacac;
+    border: 1px solid #ACACAC;
     padding: 10px 20px;
     border-radius: 5px;
 }
